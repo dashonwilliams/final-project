@@ -305,6 +305,17 @@ QUALITY WORK ↓
   align-items: center;
 }
 
+quality__description,
+.quality__img--wrapper {
+  width: 50%;
+}
+
+.quality__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* 
 
 STEPS ↓
@@ -405,6 +416,11 @@ MOBILE RESPONSIVENESS ↓
   #quality .row,
   #values .row {
     flex-direction: column-reverse;
+  }
+
+  .quality__description,
+  .quality__img--wrapper {
+    width: 100%;
   }
   #steps .row,
   #testimonials .row {
