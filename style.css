@@ -283,8 +283,13 @@ FEATURES ↓
 
 */
 
-#features {
-  position: relative;
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature{
+ width: calc(100% / 3);
 }
 
 #features .row__narrow {
@@ -305,7 +310,7 @@ QUALITY WORK ↓
   align-items: center;
 }
 
-quality__description,
+.quality__description,
 .quality__img--wrapper {
   width: 50%;
 }
@@ -403,6 +408,11 @@ MOBILE RESPONSIVENESS ↓
   .btn__menu {
     display: block;
   }
+
+  .nav__links {
+    display: none;
+  }
+}
   header .row {
     flex-direction: column;
     align-items: center;
