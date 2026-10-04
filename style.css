@@ -409,20 +409,27 @@ STEPS ↓
   margin: 0 auto;
 }
 
-#steps__para {
+.step__description {
   margin: 0;
   box-sizing: border-box;
   padding: 0 32px;
   color: #243e63;
 }
 
-#steps__img--wrapper {
+.steps__img--wrapper {
   width: 50%;
   display: flex;
   position: relative;
 }
 
-#steps__section--tag {
+#step {
+  padding: 0 32px;
+  margin: 0;
+  box-sizing: border-box;
+  color: #243e63;
+}
+
+#section__tag {
   font-size: 16px;
   color: #6415ff;
   letter-spacing: 1.6px;
@@ -430,7 +437,7 @@ STEPS ↓
   text-transform: uppercase;
 }
 
-#steps__section--title {
+#section__title {
   font-size: 36px;
   font-weight: 900;
   color: rgb(36, 62, 99);
@@ -438,6 +445,7 @@ STEPS ↓
   margin: 16px 0;
   letter-spacing: 0.025em;
 }
+
 /* 
 
 VALUES ↓
