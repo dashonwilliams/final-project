@@ -292,6 +292,11 @@ FEATURES ↓
  width: calc(100% / 3);
 }
 
+.feature__row {
+  display: flex;
+  align-items: flex-start;
+}
+
 #features .row__narrow {
   display: flex;
   flex-direction: column;
@@ -413,6 +418,7 @@ MOBILE RESPONSIVENESS ↓
     display: none;
   }
 }
+
   header .row {
     flex-direction: column;
     align-items: center;
