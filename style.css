@@ -288,8 +288,8 @@ FEATURES ↓
   flex-wrap: wrap;
 }
 
-.feature{
- width: calc(100% / 3);
+.feature {
+  width: calc(100% / 3);
 }
 
 .feature__row {
@@ -417,7 +417,6 @@ MOBILE RESPONSIVENESS ↓
   .nav__links {
     display: none;
   }
-}
 
   header .row {
     flex-direction: column;
