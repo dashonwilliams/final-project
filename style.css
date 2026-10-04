@@ -409,7 +409,7 @@ STEPS ↓
   margin: 0 auto;
 }
 
-.step__description {
+.steps__description {
   margin: 0;
   box-sizing: border-box;
   padding: 0 32px;
@@ -422,11 +422,13 @@ STEPS ↓
   position: relative;
 }
 
-#step {
+.step {
   padding: 0 32px;
   margin: 0;
   box-sizing: border-box;
   color: #243e63;
+  display: flex;
+  margin-top: 32px;
 }
 
 #section__tag {
@@ -444,6 +446,31 @@ STEPS ↓
   line-height: 1.5;
   margin: 16px 0;
   letter-spacing: 0.025em;
+}
+
+.steps__img {
+  width: 100%;
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  max-width: 320px;
+}
+
+.step__title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
 }
 
 /* 
