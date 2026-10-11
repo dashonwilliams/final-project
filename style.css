@@ -487,9 +487,17 @@ VALUES ↓
 .values__description {
   margin: 0;
   box-sizing: border-box;
-  padding: 0 32px;
+  padding: 32px 64px 32px 0;
   color: #243e63;
+  width: 50%;
 }
+
+.value {
+  color: #6415ff;
+
+}
+
+.value__name {
 
 .values__img {
   width: 50%;
@@ -504,7 +512,8 @@ VALUES ↓
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1280px;
+  max-width: none;
+  flex-direction: row;
   margin: 0 auto;
 }
 
@@ -539,6 +548,8 @@ VALUES ↓
   padding: 0;
   box-sizing: border-box;
 }
+
+.value__title {
 /*
 
 PRICING ↓
