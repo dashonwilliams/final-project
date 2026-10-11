@@ -674,7 +674,7 @@ MOBILE RESPONSIVENESS ↓
       font-size: 36px;
     }
     #values .section__para {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
@@ -703,6 +703,17 @@ MOBILE RESPONSIVENESS ↓
     .values__img {
       width: 100%;
       max-width: 448px;
+    }
+    .values__list {
+      margin: 0 auto;
+
+      #values .section__para {
+        font-size: 14px;
+    }
+
+    .value {
+      margin-right: 0;
+      align-items: center;
     }
   }
 
