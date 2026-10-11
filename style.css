@@ -485,58 +485,59 @@ VALUES ↓
   align-items: center;
 }
 .values__description {
-  margin: 0;
-  box-sizing: border-box;
   padding: 32px 64px 32px 0;
   color: #243e63;
   width: 50%;
 }
 
-.value {
-  color: #6415ff;
+.values__img {width: 50%;}
+.values__list {
+  display: flex;
+  flex-direction: row;
+  max-width: none;
+}
 
+.value {
+  margin-top: 32px;
+  margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.value__title {
+  display: flex;
+  align-items: center;
 }
 
 .value__name {
-
-.values__img {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #243e63;
-}
-
-.values__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: none;
-  flex-direction: row;
-  margin: 0 auto;
-}
-
-.values__list {
-  max-width: 20rem;
-  flex-direction: column;
-  margin-left: 0px;
-  margin-right: 0px;
-  display: flex;
-  color: #243e63;
-}
-
-.values__btn--learn-more {
-  margin-top: 48px;
-  background-color: #6415ff;
-  padding: 12px 32px;
-  border: none;
-  border-radius: 500px;
-  font-size: 14px;
-  color: #fff;
+  margin-left: 12px;
+  font-size: 20px;
   font-weight: bold;
-  transition: all 300ms ease;
-  cursor: pointer;
+  color: #243e63;
+}
+
+.value__img--wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value__img { width: 20px; height: 20px; }
+.value: nth-child(1) .value__img--wrapper {
+  background-color: #9ae6b4;
+}
+.value: nth-child(2) .value__img--wrapper {
+  background-color: #feb2b2;
+}
+
+.value__para {
+  margin-top: 16px;
+  line-height: 1.625;
+  color: #718096;
 }
 
 .section__para {
@@ -549,7 +550,18 @@ VALUES ↓
   box-sizing: border-box;
 }
 
-.value__title {
+#values .btn {
+  margin-top: 48px;
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 500px;
+  font-size: 14px;
+  color: #fff
+  font-weight: bold;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
 /*
 
 PRICING ↓
