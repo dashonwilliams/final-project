@@ -951,10 +951,12 @@ MOBILE RESPONSIVENESS ↓
   .testimonials__description {
     width: 60%;
   }
+}
 
 @media (max-width: 1024px) {
   .btn__menu {
     display: block;
+  }
     .values__list {
       max-width: 20rem;
       flex-direction: column;
@@ -981,6 +983,7 @@ MOBILE RESPONSIVENESS ↓
   footer {
     padding: 80px 32px;
   }
+}
 
 @media (max-width: 768px) {
   #quality .row,
@@ -997,9 +1000,11 @@ MOBILE RESPONSIVENESS ↓
     }
     .values__list {
       margin: 0 auto;
+    }
 
       #values .section__para {
         font-size: 14px;
+      }
       
         .testimonials__description {
           width: 100%;
@@ -1040,3 +1045,4 @@ MOBILE RESPONSIVENESS ↓
   main {
     margin-bottom: 80px;
   }
+}
