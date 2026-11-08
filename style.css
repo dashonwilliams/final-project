@@ -783,6 +783,8 @@ START / CALL TO ACTION ↓
 #start .row {
   position: relative;
   overflow: hidden;
+}
+.start__row {
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
@@ -798,12 +800,18 @@ START / CALL TO ACTION ↓
   font-weight: 700;
   line-height: 1.5;
   z-index: 2;
+  width: 50%;
 }
 
-.start__button {
+.start__buttons {
   display: flex;
   justify-content: flex-end;
+  width: 50%;
 }
+.start__button {
+  padding: 20px 40px;
+  border-radius: 500px;
+  z-index: 2;
 
 .start__button:nth-child(1) {
   background: #f56565;
@@ -952,4 +960,3 @@ MOBILE RESPONSIVENESS ↓
   main {
     margin-bottom: 80px;
   }
-}
