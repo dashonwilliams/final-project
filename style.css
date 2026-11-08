@@ -753,6 +753,16 @@ display: flex;
     cursor: pointer;
     border: none;
   }
+
+  .testimonial__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__button svg {
+  width: 16px;
+  height: 16px;
+}
     
 /* 
 
