@@ -433,7 +433,7 @@ STEPS ↓
   margin-top: 32px;
 }
 
-#section__tag {
+.section__tag {
   font-size: 16px;
   color: #6415ff;
   letter-spacing: 1.6px;
@@ -441,7 +441,7 @@ STEPS ↓
   text-transform: uppercase;
 }
 
-#section__title {
+.section__title {
   font-size: 36px;
   font-weight: 900;
   color: rgb(36, 62, 99);
