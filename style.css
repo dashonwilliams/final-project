@@ -310,12 +310,41 @@ FEATURES ↓
   gap: 20px;
 }
 .feature__img--wrapper {
-  border: 1px solid;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 999px;
-  padding: 15px;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 500px;
+}
+
+#features .section__title {
+  font-size: 48px;
+  text-align: center;
+}
+
+#features .section__para {
+  max-width: 576px;
+  text-align: center;
+}
+
+.feature__img {
+  width: 24px;
+  height: 24px;
+}
+
+.feature__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.feature__para {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  color: #7c8ba1;
 }
 
 /* 
@@ -423,15 +452,32 @@ STEPS ↓
   width: 50%;
   display: flex;
   position: relative;
+  isolation: isolate;
 }
 
 .step {
-  padding: 0 32px;
-  margin: 0;
-  box-sizing: border-box;
-  color: #243e63;
   display: flex;
+  align-items: flex-start;
   margin-top: 32px;
+  padding: 0;
+}
+
+.step__para {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  color: #718096;
+}
+
+.steps__grid {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .section__tag {
@@ -453,6 +499,8 @@ STEPS ↓
 
 .steps__img {
   width: 100%;
+  display: block;
+  height: auto;
 }
 
 .step__number {
@@ -884,24 +932,22 @@ START / CALL TO ACTION ↓
 
 .start__blob--1 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 20rem;
   height: 20rem;
   opacity: 0.5;
-  transform: translate(-80px, -128px);
-  width: 320px;
-  height: 320px;
+  transform: translate(-5rem, 8rem);
 }
 
 .start__blob--2 {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   width: 20rem;
   height: 20rem;
   opacity: 0.5;
-  transform: translate(128px, 192px);
+  transform: translate(5rem, -16rem);
 }
 
 .start__row {
@@ -1001,12 +1047,16 @@ footer {
 .footer__column--link {
   font-size: 14px;
   margin-top: 14px;
-  font-weight: bold;
+  font-weight: 500;
   color: #f7fafc;
 }
 
+.footer__column--link:nth-child(2) {
+  margin-top: 24px;
+}
+
 .footer__column--title {
-  font-weight: bold;
+  font-weight: 500;
   color: #f7fafc;
 }
 
@@ -1126,6 +1176,33 @@ MOBILE RESPONSIVENESS ↓
   footer {
     padding: 80px 32px;
   }
+
+  .feature__row {
+  padding: 32px 8px;
+}
+
+#quality .section__title {
+  font-size: 36px;
+}
+
+#quality .section__para {
+  font-size: 16px;
+}
+
+.start__row {
+  flex-direction: column;
+}
+
+.start__title {
+  width: 100%;
+  max-width: 512px;
+  text-align: center;
+}
+
+.start__buttons {
+  width: auto;
+  margin-top: 24px;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -1200,13 +1277,26 @@ MOBILE RESPONSIVENESS ↓
     text-align: center;
   }
 
-  .steps__img--wrapper,
-.steps__description {
+  .steps__description {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .steps__description {
+    padding: 0;
+    margin-top: 64px;
+    text-align: center;
+  }
+
+  .quality__description,
+.quality__img--wrapper,
+.values__description,
+.testimonials__img {
   width: 100%;
   max-width: 448px;
 }
 
-.steps__description {
+.quality__description {
   padding: 0;
   margin-top: 64px;
   text-align: center;
@@ -1233,4 +1323,64 @@ MOBILE RESPONSIVENESS ↓
     padding: 0 16px;
     align-items: center;
   }
+
+  #features .section__title {
+  font-size: 36px;
+}
+
+.feature__row {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature__text {
+  margin-left: 0;
+  margin-top: 16px;
+}
+
+.testimonial__bottom {
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.testimonial__profile {
+  flex-direction: column;
+}
+
+.testimonial__details {
+  margin-left: 0;
+  margin-top: 8px;
+}
+
+.testimonial__img {
+  width: 64px;
+  height: 64px;
+}
+
+.testimonial__para {
+  margin-bottom: 32px;
+}
+
+.start__container {
+  padding: 80px 0;
+}
+
+.start__title {
+  font-size: 24px;
+}
+
+.start__buttons {
+  flex-direction: column;
+  gap: 16px;
+}
+
+.start__button:nth-child(1) {
+  margin-right: 0;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  line-height: 1.5;
 }
