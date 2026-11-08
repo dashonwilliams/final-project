@@ -687,7 +687,9 @@ display: flex;
 }
 
 .testimonials__rating {
-  
+  color: rgba(246, 173, 85);
+  margin-right: 2px;
+  margin-top: 4px;
 }
 
 .testimonials__title {
@@ -703,6 +705,7 @@ display: flex;
   font-size: 16px;
   color: #7c8ba1;
   line-height: 1.625;
+  font-weight: 500;
 }
 
 .testimonial__bottom {
